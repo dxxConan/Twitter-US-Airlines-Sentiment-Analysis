@@ -19,15 +19,19 @@ You can see on the kaggle, people maily use R or other tools did some basic anal
 above were using pig script on Hadoop cluster, and tableau.
 
 ### Advanced analysis
-1 Find top 300 negative words in the negative comments in decreasing order 
-2 Find top 300 positive words in the positive comments in decreasing order 
-3 Choose 5-10 from top negative words, find their top 100 co-occurrence words in negative comments. 4 Choose 5-10 from top positive words, find their top 100 co-occurrence words in the positive words
+1. Find top 300 negative words in the negative comments in decreasing order 
+2. Find top 300 positive words in the positive comments in decreasing order 
+3. Choose 5-10 from top negative words, find their top 100 co-occurrence words in negative comments. 4 Choose 5-10 from top positive words, find their top 100 co-occurrence words in the positive words
+
+above used Map Reduce with Java on Hadoop
 
 ### Machine learning 
 We try to predict random tweets sentiment:
 1. transfer the original data to Words of bag model.
 2. Build different Machine learning models including Decision tree, Logistic Regression, Naive Bayes, Random Forest, Logistic Regression 
 and neural network.
+
+above used java to do the preprocessing, spark/spark.mllib to build traditional Model, Scikit-learn/python for neural network
 
 #### Result
 For detailed result, you can refer to Presentation PPT
