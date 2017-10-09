@@ -1,0 +1,103 @@
+--no of 3 different sentiments
+D = LOAD 'Tweets_Update.csv' USING org.apache.pig.piggybank.storage.CSVExcelStorage(',', 'NO_MULTILINE', 'UNIX', 'SKIP_INPUT_HEADER') AS (ra,rb,rc,rd,re,rf,rg,rh,ri,rj,rk,rl,rm,rn,ro);
+neg = GROUP D by rb;
+co = FOREACH neg GENERATE
+     group as rb,
+     COUNT (D) as percentage;
+store co into './fi/f1';
+
+--no of tweets per airline
+airline = GROUP D by rf;
+cp = FOREACH airline GENERATE
+     group as rb,
+     COUNT (D) as percentage2;
+store cp into './fi/f2';
+
+--no of airlines for different sentiments
+
+c = foreach D generate rb, rf;
+d = filter c by $0 == 'positive';
+e = group d by rf;
+f = foreach e generate $0 as airline, COUNT(d.rb);
+store f into './fi/positve';
+
+c = foreach D generate rb, rf;
+d = filter c by $0 == 'negative';
+e = group d by rf;
+f = foreach e generate $0 as airline, COUNT(d.rb);
+store f into './fi/negative';
+
+c = foreach D generate rb, rf;
+d = filter c by $0 == 'neutral';
+e = group d by rf;
+f = foreach e generate $0 as airline, COUNT(d.rb);
+store f into './fi/neutral';
+
+
+--Reasons for negative sentiment tweets
+c = foreach D generate rd;
+d = group c by rd;
+x = FILTER d by (NOT ($0 == 'null'));
+e = foreach x generate group, COUNT(c.rd);
+store e into './fi/reason';
+
+--Reasons for negative sentiment per airline
+c = foreach D generate rd, rf;
+d = filter c by rf == 'American';
+e = group d by rd;
+x = FILTER e by (NOT ($0 == 'null'));
+f = foreach x generate $0 as reason, COUNT(d.rf);
+store f into './fi/American';
+
+c = foreach D generate rd, rf;
+d = filter c by rf == 'Delta';
+e = group d by rd;
+x = FILTER e by (NOT ($0 == 'null'));
+f = foreach x generate $0 as reason, COUNT(d.rf);
+store f into './fi/Delta';
+
+c = foreach D generate rd, rf;
+d = filter c by rf == 'Southwest';
+e = group d by rd;
+x = FILTER e by (NOT ($0 == 'null'));
+f = foreach x generate $0 as reason, COUNT(d.rf);
+store f into './fi/Southwest';
+
+c = foreach D generate rd, rf;
+d = filter c by rf == 'United';
+e = group d by rd;
+x = FILTER e by (NOT ($0 == 'null'));
+f = foreach x generate $0 as reason, COUNT(d.rf);
+store f into './fi/United';
+
+c = foreach D generate rd, rf;
+d = filter c by rf == 'US Airways';
+e = group d by rd;
+x = FILTER e by (NOT ($0 == 'null'));
+f = foreach x generate $0 as reason, COUNT(d.rf);
+store f into './fi/Airways';
+
+c = foreach D generate rd, rf;
+d = filter c by rf == 'Virgin America';
+e = group d by rd;
+x = FILTER e by (NOT ($0 == 'null'));
+f = foreach x generate $0 as reason, COUNT(d.rf);
+store f into './fi/Virgin';
+
+--Tweet location
+c = foreach D generate rn;
+d = group c by rn;
+x = FILTER d by (NOT ($0 == 'null'));
+e = foreach x generate group, COUNT(c.rn);
+f = FILTER e by ($1 > 10);
+store f into './fi/location';
+
+--Tweet timezone
+c = foreach D generate ro;
+d = group c by ro;
+x = FILTER d by (NOT ($0 == 'null'));
+e = foreach x generate group, COUNT(c.ro);
+f = FILTER e by ($1 >= 5);
+store f into './fi/zone';
+
+

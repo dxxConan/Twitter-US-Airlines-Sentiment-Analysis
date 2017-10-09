@@ -1,0 +1,124 @@
+BK	22
+CT	25
+DC	28
+NY	42
+UK	17
+NYC	94
+USA	126
+Ohio	15
+Earth	15
+Miami	11
+Pekin	28
+Texas	42
+Boston	62
+Canada	15
+Dallas	14
+Denver	14
+Global	34
+Irvine	12
+London	30
+NYCATL	12
+Atlanta	11
+Chicago	104
+Florida	11
+Houston	20
+Memphis	11
+Merrick	11
+Seattle	34
+Toronto	22
+Belle MO	23
+Brooklyn	23
+Colorado	19
+Michigan	14
+New York	126
+Virginia	14
+Abu Dhabi	12
+Las Vegas	20
+San Diego	38
+Austin. TX	64
+Boston. MA	156
+California	18
+Dallas. TX	53
+Denver. CO	37
+Everywhere	11
+Manchester	12
+New Jersey	29
+On a beach	14
+Atlanta. GA	25
+Buffalo. NY	11
+Chicago. IL	81
+Hoboken. NJ	14
+Houston. TX	34
+Los Angeles	63
+McKinney TX	22
+Memphis. TN	17
+Mexico City	11
+Phoenix. AZ	12
+Raleigh. NC	28
+Seattle. WA	21
+Bay Area. CA	11
+Brooklyn. NY	66
+Columbus. OH	13
+New York. NY	156
+Pennsylvania	14
+Philadelphia	13
+Plano. Texas	14
+Portland. OR	16
+Rhode Island	19
+Arlington. VA	27
+Asheville. NC	22
+Austin. Texas	15
+Baltimore. MD	16
+Cambridge. MA	21
+Charlotte. NC	16
+Cleveland. OH	17
+Dallas. Texas	23
+Las Vegas. NV	30
+Massachusetts	17
+Nashville. TN	45
+New Haven. CT	18
+New York City	96
+Rochester. NY	12
+San Diego. CA	26
+San Francisco	86
+St. Louis. MO	11
+United States	15
+Vancouver. WA	13
+Washington DC	53
+Wellesley. MA	11
+new york city	22
+Alexandria. VA	13
+Columbus. Ohio	15
+Houston. Texas	16
+Ottawa. Canada	15
+Pittsburgh. PA	17
+Providence. RI	15
+Washington. DC	147
+washington. dc	12
+Cleveland. Ohio	11
+Fort Lauderdale	11
+Long Island. NY	22
+Los Angeles. CA	95
+Minneapolis. MN	12
+Portland. Maine	14
+Tallahassee. FL	22
+Washington D.C.	23
+Philadelphia. PA	38
+Washington. D.C.	63
+New York City. NY	18
+Northern Virginia	12
+San Francisco. CA	91
+All Over The World	14
+Englewood. Florida	13
+New York. New York	31
+bonkers in Yonkers	13
+Monterey County. CA	11
+BTR/DCA/IAD/MSY - etc	20
+Does it really matter	19
+Long Island - Arizona 	16
+San Francisco Bay Area	11
+Los Angeles. California	11
+Central Time (US & Canada)	12
+Eastern Time (US & Canada)	22
+Logan International Airport	32
+Somewhere over the rainbow.	15

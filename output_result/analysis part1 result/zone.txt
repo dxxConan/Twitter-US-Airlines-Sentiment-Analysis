@@ -1,0 +1,43 @@
+Rome	5
+Paris	25
+Quito	723
+Seoul	5
+Alaska	107
+Athens	16
+Berlin	9
+Bogota	5
+Dublin	17
+Hawaii	103
+London	195
+Madrid	7
+Sydney	107
+Taipei	6
+Tehran	17
+Arizona	225
+Beijing	11
+Caracas	9
+Tijuana	9
+Adelaide	7
+Brasilia	23
+Brisbane	10
+Brussels	9
+Helsinki	9
+Santiago	17
+Abu Dhabi	23
+Amsterdam	71
+Greenland	17
+Melbourne	7
+New Delhi	15
+Casablanca	13
+Buenos Aires	14
+Mid-Atlantic	15
+Indiana (East)	26
+America/Chicago	37
+Central America	13
+America/New_York	26
+America/Los_Angeles	15
+Atlantic Time (Canada)	487
+Central Time (US & Canada)	1901
+Eastern Time (US & Canada)	3699
+Pacific Time (US & Canada)	1197
+Mountain Time (US & Canada)	364

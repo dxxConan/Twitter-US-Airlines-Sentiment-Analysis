@@ -1,0 +1,10 @@
+longlines	34
+Bad Flight	87
+Can't Tell	198
+Late Flight	249
+Lost Luggage	149
+Damaged Luggage	12
+Cancelled Flight	245
+Customer Service Issue	767
+Flight Booking Problems	130
+Flight Attendant Complaints	87
